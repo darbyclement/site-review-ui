@@ -1,8 +1,11 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import NavBar from "./components/NavBar.jsx"
 import Signin from "./components/Signin.jsx"
 import Signup from "./components/Signup.jsx"
+import Dashboard from "./components/Dashboard.jsx"
+
 
 import {
   BrowserRouter as Router,
@@ -30,7 +33,11 @@ function App() {
 
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
+        <NavBar />
         <Switch>
+        <Route path="/dashboard">
+            <Dashboard />
+          </Route>
           <Route path="/signup">
             <Signup />
           </Route>
