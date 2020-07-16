@@ -3,7 +3,10 @@ import logo from './logo.svg';
 import './App.css';
 import Signin from "./components/Signin.jsx"
 import Signup from "./components/Signup.jsx"
+<<<<<<< HEAD
 import Welcome from "./components/Welcome.jsx"
+=======
+>>>>>>> 319beb69d3a78d2f556227ddb3c85ed3a9c29978
 
 import {
   BrowserRouter as Router,
@@ -32,9 +35,12 @@ function App() {
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
         <Switch>
+<<<<<<< HEAD
           <Route exact path="/">
             <Welcome />
           </Route>
+=======
+>>>>>>> 319beb69d3a78d2f556227ddb3c85ed3a9c29978
           <Route path="/signup">
             <Signup />
           </Route>
