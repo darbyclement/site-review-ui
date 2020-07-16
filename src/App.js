@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import Signin from "./components/Signin.jsx"
 import Signup from "./components/Signup.jsx"
+import ReviewPageContent from "./pages/ReviewPageContent.jsx"
 
 import {
   BrowserRouter as Router,
@@ -36,6 +37,9 @@ function App() {
           </Route>
           <Route path="/signin">
             <Signin />
+          </Route>
+          <Route path="/review">
+            <ReviewPageContent />
           </Route>
         </Switch>
       </div>
