@@ -4,6 +4,7 @@ import './App.css';
 import NavBar from "./components/NavBar.jsx"
 import Signin from "./components/Signin.jsx"
 import Signup from "./components/Signup.jsx"
+import ReviewPageContent from "./pages/ReviewPageContent.jsx"
 import Welcome from "./components/Welcome.jsx"
 import Dashboard from "./components/Dashboard.jsx"
 
@@ -46,6 +47,9 @@ function App() {
           </Route>
           <Route path="/signin">
             <Signin />
+          </Route>
+          <Route path="/review">
+            <ReviewPageContent />
           </Route>
         </Switch>
       </div>
