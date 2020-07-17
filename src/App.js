@@ -4,8 +4,8 @@ import './App.css';
 import NavBar from "./components/NavBar.jsx"
 import Signin from "./components/Signin.jsx"
 import Signup from "./components/Signup.jsx"
+import Welcome from "./components/Welcome.jsx"
 import Dashboard from "./components/Dashboard.jsx"
-
 
 import {
   BrowserRouter as Router,
@@ -35,6 +35,9 @@ function App() {
             renders the first one that matches the current URL. */}
         <NavBar />
         <Switch>
+          <Route exact path="/">
+            <Welcome />
+          </Route>
         <Route path="/dashboard">
             <Dashboard />
           </Route>
