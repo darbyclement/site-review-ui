@@ -10,8 +10,8 @@ import {
   Route,
   Link
 } from "react-router-dom";
-import Signin from "./Signin.jsx"
-import Signup from "./Signup.jsx"
+import Signin from "../pages/Signin.jsx"
+import Signup from "../pages/Signup.jsx"
 
 export default class NavBar extends Component{
   constructor() {
